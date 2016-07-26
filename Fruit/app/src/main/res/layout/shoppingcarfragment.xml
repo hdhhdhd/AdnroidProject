@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<include
+    layout="@layout/listview"
+    android:id="@+id/shoppingcar_list"></include>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+    <ToggleButton
+        android:id="@+id/shoppingcarfrangmrnt_tgb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/tgbsrc"
+        android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/shoppingfragment_delete_btn"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_toRightOf="@id/shoppingcarfrangmrnt_tgb"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/shoppingcarfragment_pay_btn"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="结账"
+            android:textSize="25dp"
+            android:layout_toRightOf="@id/shoppingfragment_delete_btn"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/shoppingcarfragment_tt"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/shoppingcarfrangmrnt_tgb"
+            android:text="总计："
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/shoppingcarfragmebt_sum_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/shoppingcarfragment_tt"
+            android:text="总计："
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentTop="true"/>
+</RelativeLayout>
+</RelativeLayout>

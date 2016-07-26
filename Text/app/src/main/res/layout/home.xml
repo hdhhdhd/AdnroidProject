@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/home_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安卓易手机管家"
+            android:textSize="20dp"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/home_right_iv"
+            android:layout_width="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_child_configs"/>
+    </LinearLayout>
+    <com.example.lz.text.Home.View.ClearView
+        android:id="@+id/home_clear_cv"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/home_clear_iv"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/clearbtnsrc"
+        />
+    <TextView
+        android:id="@+id/home_clear_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:text="20"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/home_clear_btn"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/clearbackgrondsrc"
+         android:layout_below="@id/home_clear_tv"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="手机加速"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+<GridView
+    android:layout_weight="0.3"
+    android:id="@+id/home_gv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="3"
+    android:horizontalSpacing="20dp"
+    android:verticalSpacing="20dp"
+    android:layout_marginBottom="30dp"
+    android:layout_alignParentBottom="true">
+
+</GridView>
+
+</RelativeLayout>

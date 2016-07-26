@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.LogRegActivity"
+    tools:showIn="@layout/logreg">
+
+    <TextView
+        android:id="@+id/logreg_username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/logreg_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/logreg_username_tv"/>
+    <TextView
+        android:id="@+id/logreg_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logreg_username_tv"
+        android:text="密    码："
+        android:textSize="30dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+    <EditText
+        android:id="@+id/logreg_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/logreg_password_tv"
+        android:layout_alignBottom="@id/logreg_password_tv"/>
+    <TextView
+        android:id="@+id/logreg_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logreg_password_tv"
+        android:text="身    份："
+        android:textSize="30dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:visibility="gone"/>
+    <Spinner
+        android:id="@+id/logreg_type_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/logreg_type_tv"
+        android:layout_toRightOf="@id/logreg_type_tv"
+        android:entries="@array/type"
+        android:visibility="gone"></Spinner>
+    <Button
+        android:id="@+id/logreg_btn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logreg_password_tv"
+        android:layout_centerHorizontal="true"
+        android:text="注册或登录"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lz.student.MainActivity">
+    <TextView
+        android:id="@+id/menu_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="骚猪学生管理系统"
+        android:textSize="@dimen/textsize40"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/menu_icon_iv"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hh"
+        android:layout_below="@id/menu_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/textsize20"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_icon_iv">
+        <include
+            layout="@layout/viewpager"
+            android:id="@+id/mainmenu_viewpager"></include>
+    </LinearLayout>
+</RelativeLayout>

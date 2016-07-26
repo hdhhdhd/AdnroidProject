@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/showapp_title"
+        layout="@layout/sontitle"></include>
+<ListView
+    android:layout_marginTop="20dp"
+    android:id="@+id/showapp_lv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    android:layout_below="@id/showapp_title"></ListView>
+
+    <ToggleButton
+        android:id="@+id/showapp_allselect_tb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/showappsrc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/showapp_delete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卸载选中程序"
+        android:layout_toRightOf="@id/showapp_allselect_tb"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="30dp"
+        android:gravity="center"/>
+</RelativeLayout>

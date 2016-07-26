@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/news_tab"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_tab"></android.support.v4.view.ViewPager>
+
+    <ImageView
+    android:id="@+id/news_addtips_iv"
+    android:layout_width="25dp"
+    android:layout_height="20dp"
+    android:src="@drawable/news_add"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>

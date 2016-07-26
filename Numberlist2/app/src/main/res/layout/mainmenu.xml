@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/mainmenu_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="一站式号码管理平台"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp"
+        />
+<ListView
+    android:id="@+id/mainmenu_lv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/mainmenu_title_tv"></ListView>
+</RelativeLayout>

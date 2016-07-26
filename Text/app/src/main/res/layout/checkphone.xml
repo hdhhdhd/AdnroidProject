@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    android:id="@+id/checkphone_title"
+    layout="@layout/sontitle"></include>
+    <ProgressBar
+        android:id="@+id/checkphone_Battery_pb"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="50"
+        android:progressDrawable="@drawable/batterybackgrond"
+        android:layout_below="@id/checkphone_title"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/checkphone_battery_tv"
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/checkphone_title"
+        android:layout_toRightOf="@id/checkphone_Battery_pb"
+        android:layout_marginTop="25dp"
+        android:background="@color/orange"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/checkphone_nowbattery_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hh"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/checkphone_battery_tv"
+        android:layout_below="@id/checkphone_title"
+        android:layout_marginTop="25dp"/>
+    <ListView
+        android:id="@+id/checkphone_phoneinfo_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkphone_Battery_pb"
+        android:layout_marginTop="20dp"></ListView>
+</RelativeLayout>

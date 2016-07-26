@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ToggleButton
+    android:id="@+id/speedphoneitem_select_tb"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:textOn=""
+    android:textOff=""
+    android:background="@drawable/showappsrc"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp"/>
+    <ImageView
+        android:id="@+id/speedphoneitem_icon_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/speedphoneitem_select_tb"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/speedphoneitem_appname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/speedphoneitem_icon_iv"
+        android:text="hh"
+        android:layout_alignTop="@id/speedphoneitem_icon_iv"/>
+    <TextView
+        android:id="@+id/speedphoneitem_ram_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/speedphoneitem_icon_iv"
+        android:layout_alignBottom="@id/speedphoneitem_icon_iv"/>
+    <TextView
+        android:id="@+id/speedphoneitem_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/speedphoneitem_icon_iv"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

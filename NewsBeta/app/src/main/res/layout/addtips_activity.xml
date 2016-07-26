@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/add_nws_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/add_nws_back"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/add_nws_back"
+            android:layout_marginLeft="15dp"
+            android:text="NewsFuck"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/add_news_tab_rl"
+        android:layout_below="@id/add_nws_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <TextView
+            android:id="@+id/add_news_tab_tv"
+            android:text="当前标签"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/add_news_nowtab_rl"
+            android:layout_below="@id/add_news_tab_tv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <Button
+                android:id="@+id/add_news_toutiao"
+                android:background="@drawable/add_tab"
+                android:text="头条"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/add_news_shehui"
+                android:background="@drawable/add_tab"
+                android:text="社会"
+                android:layout_toRightOf="@id/add_news_toutiao"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/add_news_guonei"
+                android:background="@drawable/add_tab"
+                android:text="国内"
+                android:layout_toRightOf="@id/add_news_shehui"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/add_news_guoji"
+                android:background="@drawable/add_tab"
+                android:text="国际"
+                android:layout_toRightOf="@id/add_news_guonei"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/add_news_keji"
+                android:background="@drawable/add_tab"
+                android:text="科技"
+                android:layout_toRightOf="@id/add_news_guoji"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/add_news_junshi"
+                android:background="@drawable/add_tab"
+                android:text="军事"
+                android:layout_toRightOf="@id/add_news_keji"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:text="添加兴趣标签"
+            android:layout_below="@id/add_news_nowtab_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/add_news_tab_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/add_toutiao"
+                android:background="@color/white"
+                android:text="头条"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/add_shehui"
+                android:background="@color/white"
+                android:text="社会"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/add_guonei"
+                android:background="@color/white"
+                android:text="国内"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/add_guoji"
+                android:background="@color/white"
+                android:text="国际"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/add_keji"
+                android:background="@color/white"
+                android:text="科技"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/add_junshi"
+                android:background="@color/white"
+                android:text="军事"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

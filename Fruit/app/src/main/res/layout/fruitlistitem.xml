@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+      android:id="@+id/fruit_img"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="20dp"
+      android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/fruit_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/fruit_img"
+        android:layout_alignTop="@id/fruit_img"/>
+    <TextView
+        android:id="@+id/fruit_Allnum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fruit_img"
+        android:layout_toRightOf="@id/fruit_img"
+        android:textSize="20dp"
+        android:text="库存：100"/>
+    <TextView
+        android:id="@+id/fruit_prince_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/fruit_name_tv"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:text="价格：100元"/>
+</RelativeLayout>

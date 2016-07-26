@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major">
+        <item>软件工程</item>
+        <item>网络工程</item>
+        <item>电子商务</item>
+        <item>物联网</item>
+        <item>嵌入式开发</item>
+        <item>信息安全</item>
+        <item>多媒体</item>
+        <item>商务英语</item>
+    </string-array>
+    <string-array name="degree">
+        <item>专科</item>
+        <item>本科</item>
+        <item>研究生</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+    <string-array name="grade">
+        <item>一年级</item>
+        <item>二年级</item>
+        <item>三年级</item>
+        <item>四年级</item>
+    </string-array>
+</resources>

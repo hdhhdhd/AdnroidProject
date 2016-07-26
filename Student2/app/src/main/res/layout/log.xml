@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/log_username_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="用户名："
+    android:textSize="@dimen/textsize30"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/log_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/log_username_tv"
+        android:layout_alignBottom="@id/log_username_tv"/>
+    <TextView
+        android:id="@+id/log_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密    码："
+        android:textSize="@dimen/textsize30"
+        android:layout_below="@id/log_username_tv"
+        android:layout_marginLeft="@dimen/textsize20"/>
+    <EditText
+        android:id="@+id/log_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/log_password_tv"
+        android:layout_alignBottom="@id/log_password_tv"/>
+</RelativeLayout>
